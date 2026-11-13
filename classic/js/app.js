@@ -72,8 +72,8 @@
   header.innerHTML =
     '<div class="wrap">' +
       '<a class="header__logo" href="index.html" data-ar-aria="أعمال العرب — الصفحة الرئيسية" data-en-aria="Aamal Al Arab — home">' +
-        '<img class="logo-white" src="assets/brand/logo-full-white.png" alt="" width="1000" height="180">' +
-        '<img class="logo-color" src="assets/brand/logo-full-color.png" alt="" width="1000" height="180">' +
+        '<img class="logo-white" src="../assets/brand/logo-full-white.png" alt="" width="1000" height="180">' +
+        '<img class="logo-color" src="../assets/brand/logo-full-color.png" alt="" width="1000" height="180">' +
       "</a>" +
       '<nav class="header__nav" aria-label="Primary">' +
         NAV.slice(1).map(function (n) {
@@ -131,7 +131,7 @@
     '<div class="wrap">' +
       '<div class="footer__top">' +
         '<div class="footer__brand">' +
-          '<img src="assets/brand/logo-full-white.png" alt="" width="1000" height="180" loading="lazy">' +
+          '<img src="../assets/brand/logo-full-white.png" alt="" width="1000" height="180" loading="lazy">' +
           "<p>" + t("تصميم داخلي، تفصيل أثاث وستائر، صيانة واستشارات — من الفكرة إلى آخر لمسة، في مكان واحد.",
                      "Interior design, bespoke furniture and curtains, care and consultation — from first idea to final touch, under one roof.") + "</p>" +
         "</div>" +

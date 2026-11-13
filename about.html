@@ -5,99 +5,155 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>من نحن | أعمال العرب</title>
   <meta name="description" content="قصة أعمال العرب: مهندسون ومصممون وحرفيون تحت سقف واحد في الرياض." data-ar="قصة أعمال العرب: مهندسون ومصممون وحرفيون تحت سقف واحد في الرياض." data-en="The Aamal Al Arab story: engineers, designers and craftsmen under one roof in Riyadh.">
-  <meta name="theme-color" content="#f5f1e9">
+  <meta name="theme-color" content="#cdc3b5">
   <link rel="icon" href="assets/brand/favicon.png">
   <script>(function(){var d=document.documentElement,q=new URLSearchParams(location.search).get("lang"),s=null;try{s=localStorage.getItem("aa-lang")}catch(e){}var l=q==="en"||q==="ar"?q:s||"ar";d.lang=l;d.dir=l==="ar"?"rtl":"ltr"})()</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Kalnia:wght@300;400&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="v2/v2.css">
+  <link rel="stylesheet" href="v2/v2-pages.css">
 </head>
-<body data-page="about" class="page-light">
+<body data-page="about">
   <span hidden data-ar-title="من نحن | أعمال العرب" data-en-title="About | Aamal Al Arab"></span>
-  <main>
-    <section class="page-hero">
-      <div class="wrap">
-        <p class="label"><span data-l="ar">من نحن</span><span data-l="en">About us</span></p>
-        <h1 class="display h-xl">
-          <span data-l="ar"><span class="line"><span>كل لمسة</span></span><span class="line"><span>تترك <em>أثراً</em></span></span></span>
-          <span data-l="en"><span class="line"><span>Every touch</span></span><span class="line"><span>leaves a <em>mark</em></span></span></span>
-        </h1>
-        <p class="lead">
-          <span data-l="ar">مؤسسة سعودية تجمع التصميم والتصنيع والصيانة في مكان واحد، لأن المساحة الجميلة لا تكتمل إلا إذا بقيت جميلة.</span>
-          <span data-l="en">A Saudi studio that keeps design, making and aftercare in one place — because a beautiful room is only finished if it stays beautiful.</span>
-        </p>
-        <div class="page-hero__img" data-parallax><img data-img src="assets/img/about.jpg" alt="" width="1920" height="820"
-          data-ar-alt="حِرفي يقص قماش ستارة في المشغل" data-en-alt="A craftsman cutting curtain fabric in the workshop"></div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="flower6" viewBox="-50 -50 100 100"><g fill="currentColor"><ellipse rx="11" ry="23" cy="-23"/><ellipse rx="11" ry="23" cy="-23" transform="rotate(60)"/><ellipse rx="11" ry="23" cy="-23" transform="rotate(120)"/><ellipse rx="11" ry="23" cy="-23" transform="rotate(180)"/><ellipse rx="11" ry="23" cy="-23" transform="rotate(240)"/><ellipse rx="11" ry="23" cy="-23" transform="rotate(300)"/></g></symbol>
+    <symbol id="flower4" viewBox="-50 -50 100 100"><g fill="currentColor"><ellipse rx="14" ry="26" cy="-24" transform="rotate(45)"/><ellipse rx="14" ry="26" cy="-24" transform="rotate(135)"/><ellipse rx="14" ry="26" cy="-24" transform="rotate(225)"/><ellipse rx="14" ry="26" cy="-24" transform="rotate(315)"/></g></symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <header class="nav">
+    <a class="nav__logo" href="index.html" data-ar-aria="أعمال العرب — الرئيسية" data-en-aria="Aamal Al Arab — home"><img src="assets/brand/logo-full-color.png" alt="" width="1000" height="180"></a>
+    <nav class="nav__links" aria-label="Main">
+      <a href="services.html"><span data-l="ar">خدماتنا</span><span data-l="en">Services</span></a>
+      <a href="work.html"><span data-l="ar">أعمالنا</span><span data-l="en">Work</span></a>
+      <a href="about.html" aria-current="page"><span data-l="ar">من نحن</span><span data-l="en">About</span></a>
+      <a href="contact.html"><span data-l="ar">تواصل</span><span data-l="en">Contact</span></a>
+    </nav>
+    <div class="nav__tools">
+      <button class="nav__lang" type="button" data-ar-aria="Switch to English" data-en-aria="التحويل إلى العربية"><span data-l="ar">EN</span><span data-l="en">ع</span></button>
+      <a class="btn btn--green" href="contact.html?service=consultation"><span><span data-l="ar">احجز استشارة</span><span data-l="en">Book a consultation</span></span><svg aria-hidden="true"><use href="#arrow"/></svg></a>
+    </div>
+  </header>
+
+  <main class="deck" id="top">
+    <section class="slide s-hero s-hero--page" aria-labelledby="h-intro">
+      <div class="s-hero__img"><img src="assets/img/about.jpg" alt="" fetchpriority="high" data-ar-alt="حِرفي يقص قماش ستارة في المشغل" data-en-alt="A craftsman cutting curtain fabric in the workshop"></div>
+      <span class="dot2" aria-hidden="true"></span>
+      <div class="s-hero__panel">
+        <p class="crumbs"><a href="index.html"><span data-l="ar">الرئيسية</span><span data-l="en">Home</span></a><span aria-hidden="true">/</span><span><span data-l="ar">من نحن</span><span data-l="en">About</span></span></p>
+        <h1 class="d-title" id="h-intro" data-split><span data-l="ar">كل لمسة تترك <em>أثراً</em></span><span data-l="en">Every touch leaves a <em>mark</em></span></h1>
+        <p class="lede"><span data-l="ar">مؤسسة سعودية تجمع التصميم والتصنيع والصيانة في مكان واحد، لأن المساحة الجميلة لا تكتمل إلا إذا بقيت جميلة.</span><span data-l="en">A Saudi studio that keeps design, making and aftercare in one place — because a beautiful room is only finished if it stays beautiful.</span></p>
+        <div class="s-hero__cta"><a class="btn btn--green" href="#story"><span data-l="ar">قصتنا</span><span data-l="en">Our story</span><svg aria-hidden="true"><use href="#arrow"/></svg></a><a class="btn btn--line" href="contact.html?service=consultation"><span data-l="ar">احجز استشارة</span><span data-l="en">Book a consultation</span><svg aria-hidden="true"><use href="#arrow"/></svg></a></div>
+      </div>
+      <span class="petal" aria-hidden="true"><svg><use href="#flower4"/></svg></span>
+      <div class="badge" aria-hidden="true">
+        <svg class="badge__ring" viewBox="0 0 120 120"><defs><path id="ring-i" d="M60,60 m-47,0 a47,47 0 1,1 94,0 a47,47 0 1,1 -94,0"/></defs>
+          <text data-l="en"><textPath href="#ring-i">MADE IN RIYADH • CRAFTED BY HAND • SINCE 2011 • </textPath></text>
+          <text data-l="ar"><textPath href="#ring-i">صُنع في الرياض • بأيدٍ سعودية • منذ ١٥ عاماً • </textPath></text>
+        </svg>
+        <span class="badge__core"><svg viewBox="0 0 24 24"><use href="#flower6"/></svg></span>
       </div>
     </section>
-
-    <section class="section" style="padding-top:0">
-      <div class="wrap split">
+    <section class="slide s-split" id="story">
+      <div class="split__media" data-up><img src="assets/img/svc-bespoke.jpg" alt="" loading="lazy"><span class="tag"><span data-l="ar">مشاغلنا — الرياض</span><span data-l="en">Our workshops — Riyadh</span></span></div>
+      <div class="split__text">
+        
+        <h2 class="d-title" data-split><span data-l="ar">بدأنا من <em>المشغل</em></span><span data-l="en">We started in the <em>workshop</em></span></h2>
+        <p><span data-l="ar">قبل أن نرسم أول مخطط، كنا نفصّل الستائر وننجّد الكنب لبيوت الرياض. تعلّمنا من القماش والخشب ما لا يعلّمه برنامج تصميم: كيف يسقط الكتان، وكيف يتعب الجلد، وماذا تحتاج القطعة لتعيش عشرين سنة.</span><span data-l="en">Before we drew a single plan, we were tailoring curtains and upholstering sofas for Riyadh homes. Fabric and wood taught us what no design software can: how linen falls, how leather ages, and what a piece needs to last twenty years.</span></p>
+        <ul class="ticks" data-up><li><span data-l="ar">مهندسو تصميم داخلي</span><span data-l="en">Interior design engineers</span></li><li><span data-l="ar">مشاغل تفصيل خاصة</span><span data-l="en">Our own workshops</span></li><li><span data-l="ar">فنيو تنجيد وستائر</span><span data-l="en">Upholstery & drapery technicians</span></li><li><span data-l="ar">فريق صيانة بعد التسليم</span><span data-l="en">An aftercare team</span></li></ul>
+      </div>
+    </section>
+    <!-- 04 VALUES -->
+    <section class="slide s-values flexcol" id="values-about" aria-labelledby="h-values">
+      <div class="head">
         <div>
-          <p class="label" data-reveal><span data-l="ar">قصتنا</span><span data-l="en">Our story</span></p>
-          <h2 class="display h-md" style="margin-top:20px" data-reveal><span data-l="ar">بدأنا من المشغل</span><span data-l="en">We started in the workshop</span></h2>
-          <p class="lead muted" style="margin-top:28px" data-reveal>
-            <span data-l="ar">قبل أن نرسم أول مخطط، كنا نفصّل الستائر وننجّد الكنب لبيوت الرياض. تعلّمنا من القماش والخشب ما لا يعلّمه برنامج تصميم: كيف يسقط الكتان، وكيف يتعب الجلد، وماذا تحتاج القطعة لتعيش عشرين سنة.</span>
-            <span data-l="en">Before we drew a single plan, we were tailoring curtains and upholstering sofas for Riyadh homes. Fabric and wood taught us what no design software can: how linen falls, how leather ages, and what a piece needs to last twenty years.</span>
-          </p>
-          <p class="muted" style="margin-top:24px" data-reveal>
-            <span data-l="ar">اليوم يضم فريقنا مهندسي تصميم داخلي وفنيين متخصصين، ونخدم الفلل والمجالس والمكاتب والفنادق — وما زلنا نصنع كل قطعة بأيدينا.</span>
-            <span data-l="en">Today our team includes interior design engineers and specialist technicians serving villas, majlis, offices and hotels — and we still make every piece by hand.</span>
-          </p>
+          <h2 class="d-title" id="h-values" data-split><span data-l="ar">اجعلها <em>لا تُنسى</em>.</span><span data-l="en">Make it <em>memorable</em>.</span></h2>
+          <p><span data-l="ar">لا نبني غرفاً فقط — نصنع مساحات تبقى في الذاكرة.</span><span data-l="en">Not just building rooms — creating spaces people remember.</span></p>
         </div>
-        <div class="split__img" data-reveal data-parallax><img data-img src="assets/img/svc-bespoke.jpg" alt="" loading="lazy" width="800" height="1000"
-          data-ar-alt="كنبة مفصّلة بقماش أخضر" data-en-alt="A bespoke sofa in green fabric"></div>
+        <span class="petal" style="position:relative;width:84px;height:84px;color:var(--sage)" aria-hidden="true"><svg><use href="#flower6"/></svg></span>
+      </div>
+      <div class="notch-row grow">
+        <article class="ncard" data-up>
+          <div class="ncard__body"><img src="assets/img/prod-sofa.jpg" alt="" loading="lazy"></div>
+          <span class="ncard__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg></span>
+          <div class="ncard__text"><h3><span data-l="ar">هدفنا</span><span data-l="en">Our goal</span></h3><p><span data-l="ar">أن نرفع معيار التصميم الداخلي في الرياض بحلول مبتكرة تُنفَّذ بإتقان.</span><span data-l="en">To raise the standard of interior design in Riyadh with inventive ideas, carefully made.</span></p></div>
+        </article>
+        <article class="ncard" data-up>
+          <div class="ncard__body"><img src="assets/img/prod-curtains.jpg" alt="" loading="lazy"></div>
+          <span class="ncard__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M6 3h12l3 6-9 12L3 9z"/><path d="M3 9h18M9 3l-1.5 6L12 21M15 3l1.5 6L12 21"/></svg></span>
+          <div class="ncard__text"><h3><span data-l="ar">قيمنا</span><span data-l="en">Values</span></h3><ul><li><span data-l="ar">الإبداع</span><span data-l="en">Creativity</span></li><li><span data-l="ar">الشراكة</span><span data-l="en">Collaboration</span></li><li><span data-l="ar">الإتقان</span><span data-l="en">Excellence</span></li><li><span data-l="ar">الاهتمام بالتفاصيل</span><span data-l="en">Attention to detail</span></li></ul></div>
+        </article>
+        <article class="ncard" data-up>
+          <div class="ncard__body"><img src="assets/img/work-6.jpg" alt="" loading="lazy"></div>
+          <span class="ncard__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l4-4 4 2 4-2 6 6"/><path d="M7 15l2 2a1.5 1.5 0 0 0 2-2M10 18l1 1a1.5 1.5 0 0 0 2-2M13 18a1.5 1.5 0 0 0 2-2l-3-3"/><path d="M3 11l4 4M21 13l-4 4"/></svg></span>
+          <div class="ncard__text"><h3><span data-l="ar">أسلوبنا</span><span data-l="en">Approach</span></h3><p><span data-l="ar">نبدأ بفهمك: طريقة عيشك وضيوفك وذوقك، ثم نصمّم مساحة تشبهك.</span><span data-l="en">We start by understanding you — how you live, who you host, what you love — then design a space that is yours.</span></p></div>
+        </article>
       </div>
     </section>
-
-    <section class="section section--sand">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <p class="label"><span data-l="ar">لماذا نحن</span><span data-l="en">Why us</span></p>
-            <h2 class="display h-md"><span data-l="ar">ما يميّز أعمالنا</span><span data-l="en">What sets our work apart</span></h2>
-          </div>
-        </div>
-        <div class="values">
-          <div class="value" data-reveal>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.6 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg>
-            <div><h3><span data-l="ar">خبرة تثق بها</span><span data-l="en">Experience you can trust</span></h3><p><span data-l="ar">سنوات في تصميم وتفصيل الأثاث والستائر لبيوت ومجالس الرياض.</span><span data-l="en">Years designing and tailoring furniture and curtains for Riyadh homes and majlis.</span></p></div>
-          </div>
-          <div class="value" data-reveal>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 20V8l8-5 8 5v12"/><path d="M9 20v-6h6v6"/></svg>
-            <div><h3><span data-l="ar">خامات فاخرة</span><span data-l="en">Premium materials</span></h3><p><span data-l="ar">أخشاب صلبة وأقمشة أوروبية مختارة لتدوم.</span><span data-l="en">Solid woods and European fabrics chosen to last.</span></p></div>
-          </div>
-          <div class="value" data-reveal>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
-            <div><h3><span data-l="ar">عناية متكاملة</span><span data-l="en">Complete care</span></h3><p><span data-l="ar">من التصميم إلى التصنيع ثم الصيانة — جهة واحدة مسؤولة.</span><span data-l="en">Design, manufacture and maintenance — one team accountable.</span></p></div>
-          </div>
-          <div class="value" data-reveal>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 21s-7-4.5-7-11a7 7 0 0 1 14 0c0 6.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-            <div><h3><span data-l="ar">على ذوقك أنت</span><span data-l="en">Tailored to your taste</span></h3><p><span data-l="ar">لا نكرر تصميماً؛ كل مشروع يبدأ من طريقة عيشك.</span><span data-l="en">We never repeat a design; every project starts with how you live.</span></p></div>
-          </div>
-        </div>
+    <section class="slide s-statement">
+      <blockquote data-up><span data-l="ar">لا نملك أسلوباً واحداً نكرره. كل بيت يبدأ من <em>صاحبه</em>: طريقة عيشه، ضيوفه، وضوء نوافذه.</span><span data-l="en">We have no house style to repeat. Every home starts with the <em>people</em> in it: how they live, who they host, how light falls through their windows.</span></blockquote>
+      <div class="stats-grid">
+        <div data-up><b data-count="15" data-suffix="+">15+</b><span><span data-l="ar">سنة خبرة</span><span data-l="en">years of craft</span></span></div>
+        <div data-up><b data-count="480" data-suffix="+">480+</b><span><span data-l="ar">مشروع منفّذ</span><span data-l="en">projects delivered</span></span></div>
+        <div data-up><b data-count="1200" data-suffix="+">1200+</b><span><span data-l="ar">قطعة مفصّلة سنوياً</span><span data-l="en">pieces made a year</span></span></div>
+        <div data-up><b data-count="98" data-suffix="%">98%</b><span><span data-l="ar">عملاء يعودون إلينا</span><span data-l="en">clients who return</span></span></div>
       </div>
     </section>
-
-    <section class="section">
-      <div class="wrap">
-        <div class="cta" data-reveal>
-          <img class="cta__mark" src="assets/brand/logo-mark-white.png" alt="" width="480" height="391" loading="lazy">
-          <div>
-            <p class="label"><span data-l="ar">استشارة مجانية</span><span data-l="en">Complimentary consultation</span></p>
-            <h2 class="display h-lg" style="margin-top:18px"><span data-l="ar">لنبدأ من مساحتك</span><span data-l="en">Let's start with your space</span></h2>
-          </div>
-          <div class="cta__actions">
-            <a class="btn btn--brass" href="contact.html?service=consultation" data-icon="arrow"><span data-l="ar">احجز استشارة</span><span data-l="en">Book a consultation</span></a>
-          </div>
+    <!-- 06 CTA -->
+    <section class="slide s-cta" id="contact" aria-labelledby="h-cta">
+      <div class="s-cta__left">
+        <div>
+          <p class="pill" style="margin-bottom:20px"><span data-l="ar">الاستشارة الأولى مجانية</span><span data-l="en">First consultation is free</span></p>
+          <h2 class="d-title" id="h-cta" data-split><span data-l="ar">لنبدأ من <em>مساحتك</em></span><span data-l="en">Let's start with <em>your space</em></span></h2>
+        </div>
+        <div class="steps">
+          <div class="step" data-up><b>01</b><h4><span data-l="ar">الاستشارة</span><span data-l="en">Consult</span></h4><p><span data-l="ar">نزورك ونقيس المساحة.</span><span data-l="en">We visit and measure.</span></p></div>
+          <div class="step" data-up><b>02</b><h4><span data-l="ar">التصميم</span><span data-l="en">Design</span></h4><p><span data-l="ar">مخططات وعينات بين يديك.</span><span data-l="en">Plans and samples in hand.</span></p></div>
+          <div class="step" data-up><b>03</b><h4><span data-l="ar">التفصيل</span><span data-l="en">Make</span></h4><p><span data-l="ar">في مشاغلنا بإشراف مهندسينا.</span><span data-l="en">In our workshops, by our engineers.</span></p></div>
+          <div class="step" data-up><b>04</b><h4><span data-l="ar">التركيب والعناية</span><span data-l="en">Install &amp; care</span></h4><p><span data-l="ar">تركيب نظيف وصيانة دورية.</span><span data-l="en">Clean install, scheduled aftercare.</span></p></div>
+        </div>
+      </div>
+      <div class="s-cta__right" data-up>
+        <img class="bg" src="assets/img/about.jpg" alt="" loading="lazy">
+        <div class="badge" aria-hidden="true">
+          <svg class="badge__ring" viewBox="0 0 120 120"><defs><path id="ring2" d="M60,60 m-47,0 a47,47 0 1,1 94,0 a47,47 0 1,1 -94,0"/></defs>
+            <text data-l="en"><textPath href="#ring2">BOOK A FREE CONSULTATION • AAMAL AL ARAB • </textPath></text>
+            <text data-l="ar"><textPath href="#ring2">احجز استشارتك المجانية • أعمال العرب • الرياض • </textPath></text>
+          </svg>
+          <span class="badge__core"><svg viewBox="0 0 24 24"><use href="#flower6"/></svg></span>
+        </div>
+        <h3 class="d-title" style="font-size:clamp(28px,2.6vw,44px)"><span data-l="ar">تواصل معنا</span><span data-l="en">Get in touch</span></h3>
+        <div class="contact-list">
+          <a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a>
+          <a href="mailto:info@aamalalarab.sa">info@aamalalarab.sa</a>
+          <span><span data-l="ar">طريق العليا، حي العليا، الرياض</span><span data-l="en">Olaya Road, Al Olaya, Riyadh</span></span>
+        </div>
+        <div class="btns">
+          <a class="btn btn--cream" href="contact.html?service=consultation"><span data-l="ar">احجز استشارة</span><span data-l="en">Book a consultation</span><svg aria-hidden="true"><use href="#arrow"/></svg></a>
+          <a class="btn btn--line" style="border-color:rgba(247,242,232,.5)" href="https://wa.me/966500000000" target="_blank" rel="noopener"><span data-l="ar">واتساب</span><span data-l="en">WhatsApp</span></a>
         </div>
       </div>
     </section>
   </main>
+
+  <footer class="foot">
+    <span>© 2026 <span data-l="ar">مؤسسة أعمال العرب للتجارة</span><span data-l="en">Aamal Al Arab For Trading Establishment</span> · <span data-l="ar">سجل تجاري</span><span data-l="en">C.R.</span> 1010000000</span>
+    <span class="foot__links">
+      <a href="index.html"><span data-l="ar">الرئيسية</span><span data-l="en">Home</span></a>
+      <a href="services.html"><span data-l="ar">خدماتنا</span><span data-l="en">Services</span></a>
+      <a href="work.html"><span data-l="ar">أعمالنا</span><span data-l="en">Work</span></a>
+      <a href="about.html"><span data-l="ar">من نحن</span><span data-l="en">About</span></a>
+      <a href="contact.html"><span data-l="ar">تواصل</span><span data-l="en">Contact</span></a>
+      <a href="classic/"><span data-l="ar">النسخة الكلاسيكية</span><span data-l="en">Classic version</span></a>
+    </span>
+  </footer>
+  <a class="wa" href="https://wa.me/966500000000" target="_blank" rel="noopener" data-ar-aria="تواصل عبر واتساب" data-en-aria="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.3c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.3 8.3 0 1 1 12 20.3z"/></svg></a>
+
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
-  <script src="js/app.js" defer></script>
+  <script src="v2/v2.js" defer></script>
 </body>
 </html>

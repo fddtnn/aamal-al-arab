@@ -5,88 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>تواصل معنا | أعمال العرب</title>
   <meta name="description" content="احجز استشارة أو موعداً مع أعمال العرب في الرياض." data-ar="احجز استشارة أو موعداً مع أعمال العرب في الرياض." data-en="Book a consultation or appointment with Aamal Al Arab in Riyadh.">
-  <meta name="theme-color" content="#f5f1e9">
+  <meta name="theme-color" content="#cdc3b5">
   <link rel="icon" href="assets/brand/favicon.png">
   <script>(function(){var d=document.documentElement,q=new URLSearchParams(location.search).get("lang"),s=null;try{s=localStorage.getItem("aa-lang")}catch(e){}var l=q==="en"||q==="ar"?q:s||"ar";d.lang=l;d.dir=l==="ar"?"rtl":"ltr"})()</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Kalnia:wght@300;400&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="v2/v2.css">
+  <link rel="stylesheet" href="v2/v2-pages.css">
 </head>
-<body data-page="contact" class="page-light">
+<body data-page="contact">
   <span hidden data-ar-title="تواصل معنا | أعمال العرب" data-en-title="Contact | Aamal Al Arab"></span>
-  <main>
-    <section class="page-hero" style="padding-bottom:clamp(40px,6vh,72px)">
-      <div class="wrap">
-        <p class="label"><span data-l="ar">تواصل معنا</span><span data-l="en">Contact</span></p>
-        <h1 class="display h-xl">
-          <span data-l="ar"><span class="line"><span>لنتحدث عن</span></span><span class="line"><span><em>مساحتك</em></span></span></span>
-          <span data-l="en"><span class="line"><span>Let's talk about</span></span><span class="line"><span>your <em>space</em></span></span></span>
-        </h1>
-      </div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="flower6" viewBox="-50 -50 100 100"><g fill="currentColor"><ellipse rx="11" ry="23" cy="-23"/><ellipse rx="11" ry="23" cy="-23" transform="rotate(60)"/><ellipse rx="11" ry="23" cy="-23" transform="rotate(120)"/><ellipse rx="11" ry="23" cy="-23" transform="rotate(180)"/><ellipse rx="11" ry="23" cy="-23" transform="rotate(240)"/><ellipse rx="11" ry="23" cy="-23" transform="rotate(300)"/></g></symbol>
+    <symbol id="flower4" viewBox="-50 -50 100 100"><g fill="currentColor"><ellipse rx="14" ry="26" cy="-24" transform="rotate(45)"/><ellipse rx="14" ry="26" cy="-24" transform="rotate(135)"/><ellipse rx="14" ry="26" cy="-24" transform="rotate(225)"/><ellipse rx="14" ry="26" cy="-24" transform="rotate(315)"/></g></symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <header class="nav">
+    <a class="nav__logo" href="index.html" data-ar-aria="أعمال العرب — الرئيسية" data-en-aria="Aamal Al Arab — home"><img src="assets/brand/logo-full-color.png" alt="" width="1000" height="180"></a>
+    <nav class="nav__links" aria-label="Main">
+      <a href="services.html"><span data-l="ar">خدماتنا</span><span data-l="en">Services</span></a>
+      <a href="work.html"><span data-l="ar">أعمالنا</span><span data-l="en">Work</span></a>
+      <a href="about.html"><span data-l="ar">من نحن</span><span data-l="en">About</span></a>
+      <a href="contact.html" aria-current="page"><span data-l="ar">تواصل</span><span data-l="en">Contact</span></a>
+    </nav>
+    <div class="nav__tools">
+      <button class="nav__lang" type="button" data-ar-aria="Switch to English" data-en-aria="التحويل إلى العربية"><span data-l="ar">EN</span><span data-l="en">ع</span></button>
+      <a class="btn btn--green" href="contact.html?service=consultation"><span><span data-l="ar">احجز استشارة</span><span data-l="en">Book a consultation</span></span><svg aria-hidden="true"><use href="#arrow"/></svg></a>
+    </div>
+  </header>
+
+  <main class="deck" id="top">
+    <section class="slide s-contact" aria-labelledby="h-contact">
+      <form class="form" novalidate>
+        <p class="crumbs" style="grid-column:1/-1;margin:0"><a href="index.html"><span data-l="ar">الرئيسية</span><span data-l="en">Home</span></a><span aria-hidden="true">/</span><span><span data-l="ar">تواصل معنا</span><span data-l="en">Contact</span></span></p>
+        <h1 class="d-title" id="h-contact" data-split><span data-l="ar">لنتحدث عن <em>مساحتك</em></span><span data-l="en">Let's talk about <em>your space</em></span></h1>
+        <p class="sub"><span data-l="ar">املأ النموذج وسيتصل بك فريقنا خلال ٢٤ ساعة. الاستشارة الأولى مجانية.</span><span data-l="en">Fill in the form and our team will call you within 24 hours. Your first consultation is free.</span></p>
+        <div class="field field--full" data-up><span class="lbl"><span data-l="ar">الخدمة المطلوبة</span><span data-l="en">What do you need?</span></span><div class="chips"><input type="radio" name="service" id="s-consultation" value="consultation" checked><label for="s-consultation"><span data-l="ar">استشارة</span><span data-l="en">Consultation</span></label><input type="radio" name="service" id="s-design" value="design"><label for="s-design"><span data-l="ar">تصميم داخلي</span><span data-l="en">Interior design</span></label><input type="radio" name="service" id="s-bespoke" value="bespoke"><label for="s-bespoke"><span data-l="ar">تفصيل أثاث وستائر</span><span data-l="en">Bespoke furniture</span></label><input type="radio" name="service" id="s-care" value="care"><label for="s-care"><span data-l="ar">صيانة</span><span data-l="en">Care</span></label></div></div>
+        <div class="field" data-up><label for="f-name"><span data-l="ar">الاسم</span><span data-l="en">Full name</span> *</label><input id="f-name" name="name" type="text" autocomplete="name" required><span class="err" aria-live="polite"></span></div>
+        <div class="field" data-up><label for="f-phone"><span data-l="ar">رقم الجوال</span><span data-l="en">Mobile</span> *</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" dir="ltr" placeholder="05X XXX XXXX" required><span class="err" aria-live="polite"></span></div>
+        <div class="field" data-up><label for="f-email"><span data-l="ar">البريد الإلكتروني</span><span data-l="en">Email</span></label><input id="f-email" name="email" type="email" autocomplete="email" dir="ltr"><span class="err" aria-live="polite"></span></div>
+        <div class="field" data-up><label for="f-district"><span data-l="ar">الحي</span><span data-l="en">District</span></label><input id="f-district" name="district" type="text" data-ar-ph="مثال: الملقا" data-en-ph="e.g. Al Malqa"></div>
+        <div class="field field--full" data-up><label for="f-msg"><span data-l="ar">أخبرنا عن مشروعك</span><span data-l="en">Tell us about your project</span> *</label><textarea id="f-msg" name="message" required data-ar-ph="نوع المساحة، المقاسات التقريبية، والموعد المناسب للزيارة" data-en-ph="Type of space, rough size, and a good time to visit"></textarea><span class="err" aria-live="polite"></span></div>
+        <div class="field--full" data-up><button class="btn btn--green" type="submit"><span data-l="ar">أرسل الطلب</span><span data-l="en">Send request</span><svg aria-hidden="true"><use href="#arrow"/></svg></button></div>
+        <p class="form__ok" role="status"><span data-l="ar">شكراً لك! استلمنا طلبك وسيتواصل معك فريقنا خلال ٢٤ ساعة.</span><span data-l="en">Thank you! We've received your request and our team will call you within 24 hours.</span></p>
+      </form>
+      <aside class="info-card" data-up>
+        <img class="bg" src="assets/img/svc-consult.jpg" alt="" loading="lazy">
+        <div class="badge" aria-hidden="true">
+          <svg class="badge__ring" viewBox="0 0 120 120"><defs><path id="ring-c" d="M60,60 m-47,0 a47,47 0 1,1 94,0 a47,47 0 1,1 -94,0"/></defs>
+            <text data-l="en"><textPath href="#ring-c">WE REPLY WITHIN 24 HOURS • AAMAL AL ARAB • </textPath></text>
+            <text data-l="ar"><textPath href="#ring-c">نرد خلال ٢٤ ساعة • أعمال العرب • الرياض • </textPath></text>
+          </svg>
+          <span class="badge__core"><svg viewBox="0 0 24 24"><use href="#flower6"/></svg></span>
+        </div>
+        <h2 class="d-title" style="font-size:clamp(28px,2.6vw,44px)"><span data-l="ar">أو تواصل مباشرة</span><span data-l="en">Or reach us directly</span></h2>
+        <div class="info-rows">
+          <div><small><span data-l="ar">اتصل بنا</span><span data-l="en">Call</span></small><a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a></div>
+          <div><small><span data-l="ar">البريد</span><span data-l="en">Email</span></small><a href="mailto:info@aamalalarab.sa">info@aamalalarab.sa</a></div>
+          <div><small><span data-l="ar">ساعات العمل</span><span data-l="en">Hours</span></small><span data-l="ar">السبت – الخميس، ٩ص – ١٠م</span><span data-l="en">Sat – Thu, 9am – 10pm</span></div>
+        </div>
+        <div class="btns" style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn--cream" href="https://wa.me/966500000000" target="_blank" rel="noopener"><span data-l="ar">واتساب</span><span data-l="en">WhatsApp</span><svg aria-hidden="true"><use href="#arrow"/></svg></a></div>
+      </aside>
     </section>
-
-    <section style="padding-bottom:clamp(80px,12vh,160px)">
-      <div class="wrap contact">
-        <div class="contact__info" data-reveal>
-          <div><strong><span data-l="ar">اتصل بنا</span><span data-l="en">Call us</span></strong><a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a></div>
-          <div><strong><span data-l="ar">راسلنا</span><span data-l="en">Email us</span></strong><a href="mailto:info@aamalalarab.sa">info@aamalalarab.sa</a></div>
-          <div><strong><span data-l="ar">المعرض</span><span data-l="en">Showroom</span></strong><p><span data-l="ar">طريق العليا، حي العليا، الرياض</span><span data-l="en">Olaya Road, Al Olaya, Riyadh</span></p></div>
-          <div><strong><span data-l="ar">ساعات العمل</span><span data-l="en">Hours</span></strong><p><span data-l="ar">السبت – الخميس، ٩ص – ١٠م</span><span data-l="en">Sat – Thu, 9am – 10pm</span></p></div>
-        </div>
-
-        <div data-reveal>
-          <form class="form" novalidate>
-            <div class="field field--full">
-              <label><span data-l="ar">الخدمة المطلوبة</span><span data-l="en">What do you need?</span></label>
-              <div class="chips">
-                <input type="radio" name="service" id="s-consult" value="consultation" checked><label for="s-consult"><span data-l="ar">استشارة</span><span data-l="en">Consultation</span></label>
-                <input type="radio" name="service" id="s-design" value="design"><label for="s-design"><span data-l="ar">تصميم داخلي</span><span data-l="en">Interior design</span></label>
-                <input type="radio" name="service" id="s-bespoke" value="bespoke"><label for="s-bespoke"><span data-l="ar">تفصيل أثاث وستائر</span><span data-l="en">Bespoke furniture &amp; curtains</span></label>
-                <input type="radio" name="service" id="s-care" value="care"><label for="s-care"><span data-l="ar">صيانة</span><span data-l="en">Care &amp; maintenance</span></label>
-              </div>
-            </div>
-            <div class="field">
-              <label for="f-name"><span data-l="ar">الاسم</span><span data-l="en">Full name</span> *</label>
-              <input id="f-name" name="name" type="text" autocomplete="name" required>
-              <span class="err" aria-live="polite"></span>
-            </div>
-            <div class="field">
-              <label for="f-phone"><span data-l="ar">رقم الجوال</span><span data-l="en">Mobile</span> *</label>
-              <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" dir="ltr" placeholder="05X XXX XXXX" required>
-              <span class="err" aria-live="polite"></span>
-            </div>
-            <div class="field">
-              <label for="f-email"><span data-l="ar">البريد الإلكتروني</span><span data-l="en">Email</span></label>
-              <input id="f-email" name="email" type="email" autocomplete="email" dir="ltr">
-            </div>
-            <div class="field">
-              <label for="f-district"><span data-l="ar">الحي</span><span data-l="en">District</span></label>
-              <input id="f-district" name="district" type="text" data-ar-ph="مثال: الملقا" data-en-ph="e.g. Al Malqa">
-            </div>
-            <div class="field field--full">
-              <label for="f-msg"><span data-l="ar">أخبرنا عن مشروعك</span><span data-l="en">Tell us about your project</span> *</label>
-              <textarea id="f-msg" name="message" required data-ar-ph="نوع المساحة، المقاسات التقريبية، والموعد المناسب للزيارة" data-en-ph="Type of space, rough size, and a good time to visit"></textarea>
-              <span class="err" aria-live="polite"></span>
-            </div>
-            <div class="field--full">
-              <button class="btn btn--green" type="submit" data-icon="arrow"><span data-l="ar">أرسل الطلب</span><span data-l="en">Send request</span></button>
-            </div>
-            <p class="form__ok" role="status"><span data-l="ar">شكراً لك! استلمنا طلبك وسيتواصل معك فريقنا خلال ٢٤ ساعة.</span><span data-l="en">Thank you! We've received your request and our team will call you within 24 hours.</span></p>
-          </form>
-        </div>
+    <section class="slide s-map" aria-labelledby="h-map">
+      <div class="s-map__text">
+        <p class="pill"><span data-l="ar">المعرض والمشغل</span><span data-l="en">Showroom & workshop</span></p>
+        <h2 class="d-title" id="h-map" data-split><span data-l="ar">زورنا في <em>العليا</em></span><span data-l="en">Visit us in <em>Olaya</em></span></h2>
+        <p class="lede"><span data-l="ar">طريق العليا، حي العليا، الرياض. شاهد العينات والأقمشة على الطبيعة قبل أن تختار.</span><span data-l="en">Olaya Road, Al Olaya, Riyadh. See the samples and fabrics in person before you choose.</span></p>
+        <div><a class="btn btn--line" href="https://www.openstreetmap.org/?mlat=24.695&amp;mlon=46.68#map=15/24.695/46.68" target="_blank" rel="noopener"><span data-l="ar">افتح الخريطة</span><span data-l="en">Open map</span><svg aria-hidden="true"><use href="#arrow"/></svg></a></div>
       </div>
-      <div class="wrap">
-        <div class="map" data-reveal>
-          <iframe title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=46.66%2C24.68%2C46.70%2C24.71&amp;layer=mapnik&amp;marker=24.695%2C46.68"></iframe>
-        </div>
-      </div>
+      <div class="map" data-up><iframe title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=46.66%2C24.68%2C46.70%2C24.71&amp;layer=mapnik&amp;marker=24.695%2C46.68"></iframe></div>
     </section>
   </main>
+
+  <footer class="foot">
+    <span>© 2026 <span data-l="ar">مؤسسة أعمال العرب للتجارة</span><span data-l="en">Aamal Al Arab For Trading Establishment</span> · <span data-l="ar">سجل تجاري</span><span data-l="en">C.R.</span> 1010000000</span>
+    <span class="foot__links">
+      <a href="index.html"><span data-l="ar">الرئيسية</span><span data-l="en">Home</span></a>
+      <a href="services.html"><span data-l="ar">خدماتنا</span><span data-l="en">Services</span></a>
+      <a href="work.html"><span data-l="ar">أعمالنا</span><span data-l="en">Work</span></a>
+      <a href="about.html"><span data-l="ar">من نحن</span><span data-l="en">About</span></a>
+      <a href="contact.html"><span data-l="ar">تواصل</span><span data-l="en">Contact</span></a>
+      <a href="classic/"><span data-l="ar">النسخة الكلاسيكية</span><span data-l="en">Classic version</span></a>
+    </span>
+  </footer>
+  <a class="wa" href="https://wa.me/966500000000" target="_blank" rel="noopener" data-ar-aria="تواصل عبر واتساب" data-en-aria="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.3c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.3 8.3 0 1 1 12 20.3z"/></svg></a>
+
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
-  <script src="js/app.js" defer></script>
+  <script src="v2/v2.js" defer></script>
 </body>
 </html>

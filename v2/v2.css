@@ -95,7 +95,9 @@ html[dir="rtl"] .btn:hover svg { transform: scaleX(-1) translateX(4px); }
 .slide__shade { position: absolute; inset: 0; background: #2b2118; opacity: 0; pointer-events: none; z-index: 20; border-radius: inherit; }
 
 @media (min-width: 900px) and (min-height: 680px) {
-  .deck.is-stack .slide { position: sticky; top: calc(var(--nav) + 14px); height: calc(100svh - var(--nav) - 42px); }
+  .deck.is-stack .slide { position: sticky; top: calc(var(--nav) + 14px); min-height: calc(100svh - var(--nav) - 42px); }
+  .deck.is-stack .s-work { display: flex; flex-direction: column; }
+  .deck.is-stack .s-work .bento { flex: 1; height: auto; }
 }
 
 .head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; margin-bottom: clamp(18px, 2.6vh, 34px); }

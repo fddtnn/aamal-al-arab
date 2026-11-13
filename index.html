@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>أعمال العرب | تصميم داخلي وأثاث وستائر — الرياض</title>
-  <meta name="description" content="مؤسسة أعمال العرب للتجارة: تصميم داخلي، تفصيل أثاث وستائر، صيانة واستشارات في الرياض.">
+  <meta name="description" content="مؤسسة أعمال العرب للتجارة: تصميم داخلي، تفصيل أثاث وستائر، صيانة واستشارات في الرياض." data-ar="مؤسسة أعمال العرب للتجارة: تصميم داخلي، تفصيل أثاث وستائر، صيانة واستشارات في الرياض." data-en="Aamal Al Arab: interior design, bespoke furniture and curtains, care and consultation in Riyadh.">
   <meta name="theme-color" content="#cdc3b5">
   <link rel="icon" href="assets/brand/favicon.png">
   <script>(function(){var d=document.documentElement,q=new URLSearchParams(location.search).get("lang"),s=null;try{s=localStorage.getItem("aa-lang")}catch(e){}var l=q==="en"||q==="ar"?q:s||"ar";d.lang=l;d.dir=l==="ar"?"rtl":"ltr"})()</script>
@@ -12,11 +12,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Kalnia:wght@300;400&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="v2/v2.css">
+  <link rel="stylesheet" href="v2/v2-pages.css">
 </head>
-<body>
+<body data-page="home">
   <span hidden data-ar-title="أعمال العرب | تصميم داخلي وأثاث وستائر — الرياض" data-en-title="Aamal Al Arab | Interiors, Furniture & Curtains — Riyadh"></span>
 
-  <!-- shared SVG symbols -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <symbol id="flower6" viewBox="-50 -50 100 100"><g fill="currentColor"><ellipse rx="11" ry="23" cy="-23"/><ellipse rx="11" ry="23" cy="-23" transform="rotate(60)"/><ellipse rx="11" ry="23" cy="-23" transform="rotate(120)"/><ellipse rx="11" ry="23" cy="-23" transform="rotate(180)"/><ellipse rx="11" ry="23" cy="-23" transform="rotate(240)"/><ellipse rx="11" ry="23" cy="-23" transform="rotate(300)"/></g></symbol>
     <symbol id="flower4" viewBox="-50 -50 100 100"><g fill="currentColor"><ellipse rx="14" ry="26" cy="-24" transform="rotate(45)"/><ellipse rx="14" ry="26" cy="-24" transform="rotate(135)"/><ellipse rx="14" ry="26" cy="-24" transform="rotate(225)"/><ellipse rx="14" ry="26" cy="-24" transform="rotate(315)"/></g></symbol>
@@ -24,13 +24,12 @@
   </svg>
 
   <header class="nav">
-    <a class="nav__logo" href="#top" data-ar-aria="أعمال العرب" data-en-aria="Aamal Al Arab"><img src="assets/brand/logo-full-color.png" alt="" width="1000" height="180"></a>
-    <nav class="nav__links" aria-label="Sections">
-      <a href="#services"><span data-l="ar">خدماتنا</span><span data-l="en">Services</span></a>
-      <a href="#work"><span data-l="ar">أعمالنا</span><span data-l="en">Work</span></a>
-      <a href="#values"><span data-l="ar">من نحن</span><span data-l="en">About</span></a>
-      <a href="#products"><span data-l="ar">منتجاتنا</span><span data-l="en">Products</span></a>
-      <a href="#contact"><span data-l="ar">تواصل</span><span data-l="en">Contact</span></a>
+    <a class="nav__logo" href="index.html" data-ar-aria="أعمال العرب — الرئيسية" data-en-aria="Aamal Al Arab — home"><img src="assets/brand/logo-full-color.png" alt="" width="1000" height="180"></a>
+    <nav class="nav__links" aria-label="Main">
+      <a href="services.html"><span data-l="ar">خدماتنا</span><span data-l="en">Services</span></a>
+      <a href="work.html"><span data-l="ar">أعمالنا</span><span data-l="en">Work</span></a>
+      <a href="about.html"><span data-l="ar">من نحن</span><span data-l="en">About</span></a>
+      <a href="contact.html"><span data-l="ar">تواصل</span><span data-l="en">Contact</span></a>
     </nav>
     <div class="nav__tools">
       <button class="nav__lang" type="button" data-ar-aria="Switch to English" data-en-aria="التحويل إلى العربية"><span data-l="ar">EN</span><span data-l="en">ع</span></button>
@@ -39,7 +38,6 @@
   </header>
 
   <main class="deck" id="top">
-
     <!-- 01 HERO -->
     <section class="slide s-hero" aria-labelledby="h-hero">
       <div class="s-hero__img"><img src="assets/img/hero.jpg" alt="" width="2200" height="1228" fetchpriority="high" data-ar-alt="مجلس فاخر بكنب مخملي أخضر وستائر كتان" data-en-alt="A luxury majlis with green velvet sofas and linen curtains"></div>
@@ -209,12 +207,21 @@
         </div>
       </div>
     </section>
+  
   </main>
 
   <footer class="foot">
-    <span>© 2026 <span data-l="ar">مؤسسة أعمال العرب للتجارة</span><span data-l="en">Aamal Al Arab For Trading Establishment</span></span>
-    <a href="classic.html"><span data-l="ar">النسخة الكلاسيكية من الموقع</span><span data-l="en">Classic version of the site</span></a>
+    <span>© 2026 <span data-l="ar">مؤسسة أعمال العرب للتجارة</span><span data-l="en">Aamal Al Arab For Trading Establishment</span> · <span data-l="ar">سجل تجاري</span><span data-l="en">C.R.</span> 1010000000</span>
+    <span class="foot__links">
+      <a href="index.html"><span data-l="ar">الرئيسية</span><span data-l="en">Home</span></a>
+      <a href="services.html"><span data-l="ar">خدماتنا</span><span data-l="en">Services</span></a>
+      <a href="work.html"><span data-l="ar">أعمالنا</span><span data-l="en">Work</span></a>
+      <a href="about.html"><span data-l="ar">من نحن</span><span data-l="en">About</span></a>
+      <a href="contact.html"><span data-l="ar">تواصل</span><span data-l="en">Contact</span></a>
+      <a href="classic/"><span data-l="ar">النسخة الكلاسيكية</span><span data-l="en">Classic version</span></a>
+    </span>
   </footer>
+  <a class="wa" href="https://wa.me/966500000000" target="_blank" rel="noopener" data-ar-aria="تواصل عبر واتساب" data-en-aria="Chat on WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.3c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.3 8.3 0 1 1 12 20.3z"/></svg></a>
 
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
