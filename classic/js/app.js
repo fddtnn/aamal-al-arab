@@ -6,13 +6,13 @@
 
   /* ---------- placeholder contact data (swap later) ---------- */
   var C = {
-    phone: "+966 11 216 4422",
-    phoneHref: "+966112164422",
-    wa: "",
+    phone: "+966 59 647 5546",
+    phoneHref: "+966596475546",
+    wa: "966596475546",
     email: "info@aamalalarab.sa",
     cr: "1010046507",
-    addrAr: "ص.ب ٦٦٨٠، الرياض ١١٤٥٢",
-    addrEn: "P.O. Box 6680, Riyadh 11452"
+    addrAr: "٤٠٣٤ حي العليا، الرياض",
+    addrEn: "4034 Al Olaya, Riyadh"
   };
 
   var root = document.documentElement;
@@ -146,14 +146,10 @@
         "</ul></div>" +
         "<div><h4>" + t("تواصل", "Contact") + "</h4><ul>" +
           '<li><a href="tel:' + C.phoneHref + '" dir="ltr">' + C.phone + "</a></li>" +
+          '<li><a href="tel:+966112164422" dir="ltr">+966 11 216 4422</a></li>' +
           '<li>' + t("فاكس", "Fax") + ' <span dir="ltr">+966 11 462 5058</span></li>' +
           "<li>" + t(C.addrAr, C.addrEn) + "</li>" +
-        '</ul><div class="socials">' +
-          '<a href="#" aria-label="Instagram">' + I.ig + "</a>" +
-          '<a href="#" aria-label="X">' + I.x + "</a>" +
-          '<a href="#" aria-label="Snapchat">' + I.snap + "</a>" +
-          '<a href="#" aria-label="LinkedIn">' + I.in + "</a>" +
-        "</div></div>" +
+        "</ul></div>" +
       "</div>" +
       '<div class="footer__giant" aria-hidden="true">Aamal Al Arab</div>' +
       '<div class="footer__bar">' +
