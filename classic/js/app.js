@@ -225,13 +225,22 @@
         if (bad && ok) { el.focus(); ok = false; }
       });
       if (!ok) return;
-      var btn = form.querySelector('button[type="submit"]');
-      btn.disabled = true;
-      setTimeout(function () {
-        form.querySelector(".form__ok").classList.add("is-on");
-        form.reset();
-        btn.disabled = false;
-      }, 700);
+      var ar = root.lang !== "en";
+      var val = function (n) { var el = form.elements[n]; return el ? el.value.trim() : ""; };
+      var chip = form.querySelector('input[name="service"]:checked');
+      var lab = chip && form.querySelector('label[for="' + chip.id + '"] [data-l="' + (ar ? "ar" : "en") + '"]');
+      var svcText = lab ? lab.textContent : (chip ? chip.value : "");
+      var rows = ar
+        ? ["السلام عليكم، طلب جديد من موقع أعمال العرب:", "", "الخدمة: " + svcText, "الاسم: " + val("name"), "الجوال: " + val("phone")]
+        : ["Hello, a new request from the Aamal Al Arab website:", "", "Service: " + svcText, "Name: " + val("name"), "Mobile: " + val("phone")];
+      if (val("email")) rows.push((ar ? "البريد: " : "Email: ") + val("email"));
+      if (val("district")) rows.push((ar ? "الحي: " : "District: ") + val("district"));
+      rows.push("", ar ? "تفاصيل المشروع:" : "Project details:", val("message"));
+      var url = "https://wa.me/" + C.wa + "?text=" + encodeURIComponent(rows.join("\n"));
+      if (window.matchMedia("(pointer: coarse)").matches) window.location.href = url;
+      else window.open(url, "_blank", "noopener");
+      form.querySelector(".form__ok").classList.add("is-on");
+      window.AA_LAST_WA = url;
     });
   }
 

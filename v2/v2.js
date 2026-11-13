@@ -75,13 +75,23 @@
         if (bad && !first) first = el;
       });
       if (first) { first.focus(); return; }
-      var btn = form.querySelector('button[type="submit"]');
-      btn.disabled = true;
-      setTimeout(function () {
-        form.querySelector(".form__ok").classList.add("is-on");
-        form.reset();
-        btn.disabled = false;
-      }, 700);
+      // build a ready-to-send WhatsApp message from the form
+      var ar = root.lang !== "en";
+      var val = function (name) { var el = form.elements[name]; return el ? el.value.trim() : ""; };
+      var chip = form.querySelector('input[name="service"]:checked');
+      var svcText = chip ? (form.querySelector('label[for="' + chip.id + '"] [data-l="' + (ar ? "ar" : "en") + '"]') || {}).textContent || chip.value : "";
+      var rows = ar
+        ? ["السلام عليكم، طلب جديد من موقع أعمال العرب:", "", "الخدمة: " + svcText, "الاسم: " + val("name"), "الجوال: " + val("phone")]
+        : ["Hello, a new request from the Aamal Al Arab website:", "", "Service: " + svcText, "Name: " + val("name"), "Mobile: " + val("phone")];
+      if (val("email")) rows.push((ar ? "البريد: " : "Email: ") + val("email"));
+      if (val("district")) rows.push((ar ? "الحي: " : "District: ") + val("district"));
+      rows.push("", (ar ? "تفاصيل المشروع:" : "Project details:"), val("message"));
+      var url = "https://wa.me/966596475546?text=" + encodeURIComponent(rows.join("\n"));
+      // phones: open the app in this tab; desktop: new tab (keeps the site open)
+      if (window.matchMedia("(pointer: coarse)").matches) window.location.href = url;
+      else window.open(url, "_blank", "noopener");
+      form.querySelector(".form__ok").classList.add("is-on");
+      window.AA_LAST_WA = url; // for testing
     });
   }
 
