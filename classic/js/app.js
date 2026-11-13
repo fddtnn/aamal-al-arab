@@ -6,13 +6,13 @@
 
   /* ---------- placeholder contact data (swap later) ---------- */
   var C = {
-    phone: "+966 50 000 0000",
-    phoneHref: "+966500000000",
-    wa: "966500000000",
+    phone: "+966 11 216 4422",
+    phoneHref: "+966112164422",
+    wa: "",
     email: "info@aamalalarab.sa",
-    cr: "1010000000",
-    addrAr: "طريق العليا، حي العليا، الرياض",
-    addrEn: "Olaya Road, Al Olaya, Riyadh"
+    cr: "1010046507",
+    addrAr: "ص.ب ٦٦٨٠، الرياض ١١٤٥٢",
+    addrEn: "P.O. Box 6680, Riyadh 11452"
   };
 
   var root = document.documentElement;
@@ -101,8 +101,8 @@
     "</ul>" +
     '<div class="menu__side">' +
       "<div><strong>" + t("اتصل بنا", "Call") + '</strong><a href="tel:' + C.phoneHref + '" dir="ltr">' + C.phone + "</a></div>" +
-      "<div><strong>" + t("البريد", "Email") + '</strong><a href="mailto:' + C.email + '">' + C.email + "</a></div>" +
-      "<div><strong>" + t("المعرض", "Showroom") + "</strong>" + t(C.addrAr, C.addrEn) + "</div>" +
+      "<div><strong>" + t("فاكس", "Fax") + '</strong><span dir="ltr">+966 11 462 5058</span></div>' +
+      "<div><strong>" + t("العنوان البريدي", "Postal address") + "</strong>" + t(C.addrAr, C.addrEn) + "</div>" +
       '<div><a class="btn btn--brass" href="contact.html?service=consultation">' + t("احجز استشارة", "Book a consultation") + I.arrow + "</a></div>" +
     "</div>";
 
@@ -146,7 +146,7 @@
         "</ul></div>" +
         "<div><h4>" + t("تواصل", "Contact") + "</h4><ul>" +
           '<li><a href="tel:' + C.phoneHref + '" dir="ltr">' + C.phone + "</a></li>" +
-          '<li><a href="mailto:' + C.email + '">' + C.email + "</a></li>" +
+          '<li>' + t("فاكس", "Fax") + ' <span dir="ltr">+966 11 462 5058</span></li>' +
           "<li>" + t(C.addrAr, C.addrEn) + "</li>" +
         '</ul><div class="socials">' +
           '<a href="#" aria-label="Instagram">' + I.ig + "</a>" +
@@ -171,7 +171,7 @@
   wa.setAttribute("data-ar-aria", "تواصل عبر واتساب");
   wa.setAttribute("data-en-aria", "Chat on WhatsApp");
   wa.innerHTML = I.wa;
-  document.body.appendChild(wa);
+  if (C.wa) document.body.appendChild(wa);
 
   // inline arrow icons
   document.querySelectorAll("[data-icon]").forEach(function (el) {
