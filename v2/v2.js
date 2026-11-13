@@ -137,7 +137,7 @@
   });
 
   // subtle parallax on bento images
-  document.querySelectorAll(".bcard img, .ncard__body img").forEach(function (img) {
+  document.querySelectorAll(".bcard > img, .ncard__body img").forEach(function (img) {
     gsap.fromTo(img, { yPercent: -4, scale: 1.08 }, { yPercent: 4, scale: 1.08, ease: "none", scrollTrigger: { trigger: img.parentElement, start: "top bottom", end: "bottom top", scrub: true } });
   });
 })();

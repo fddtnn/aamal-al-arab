@@ -148,9 +148,34 @@ html[lang="ar"] .s-hero__giant { text-transform: none; font-weight: 500; }
 .s-hero .dot2 { top: clamp(20px, 2.4vw, 34px); inset-inline-start: clamp(20px, 2.4vw, 34px); width: 46px; height: 46px; z-index: 3; }
 .s-hero .petal { width: 70px; height: 70px; inset-inline-start: calc(min(60%, 820px) - 34px); top: calc(50% + 40px); }
 .s-hero__stats { position: absolute; z-index: 4; inset-inline-end: clamp(30px, 3.4vw, 56px); bottom: clamp(30px, 3.4vw, 56px); display: flex; gap: 10px; }
-.stat { background: rgba(247, 242, 232, 0.88); backdrop-filter: blur(10px); border-radius: 20px; padding: 14px 18px; min-width: 120px; }
-.stat b { display: block; font-family: var(--f-display); font-weight: 400; font-size: clamp(26px, 2.4vw, 38px); line-height: 1; color: var(--green); }
-.stat span { font-size: 12.5px; color: var(--muted); }
+/* iOS "liquid glass" stat tiles */
+.stat {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-width: 128px; padding: 15px 20px 14px; border-radius: 26px;
+  background:
+    linear-gradient(140deg, rgba(255, 255, 255, 0.34) 0%, rgba(255, 255, 255, 0.10) 45%, rgba(255, 255, 255, 0.04) 100%),
+    rgba(38, 30, 20, 0.16);
+  -webkit-backdrop-filter: blur(24px) saturate(185%) brightness(1.06);
+          backdrop-filter: blur(24px) saturate(185%) brightness(1.06);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.75),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.18),
+    inset 0 0 18px rgba(255, 255, 255, 0.10),
+    0 12px 32px rgba(20, 16, 10, 0.22);
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+}
+/* specular highlight */
+.stat::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; border-radius: inherit;
+  background: radial-gradient(120% 70% at 18% 0%, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0) 55%);
+}
+.stat:hover { transform: translateY(-3px); box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.85), inset 0 -1px 1px rgba(255, 255, 255, 0.2), inset 0 0 18px rgba(255, 255, 255, 0.14), 0 18px 40px rgba(20, 16, 10, 0.28); }
+.stat b { display: block; font-family: var(--f-display); font-weight: 400; font-size: clamp(26px, 2.4vw, 38px); line-height: 1; color: #fff; text-shadow: 0 1px 14px rgba(20, 16, 10, 0.35); }
+.stat span { font-size: 12.5px; color: rgba(255, 255, 255, 0.9); text-shadow: 0 1px 8px rgba(20, 16, 10, 0.4); }
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .stat { background: rgba(38, 30, 20, 0.55); }
+}
 
 /* ---------- notched cards (services & values) ---------- */
 .notch-row { display: grid; gap: var(--gap); height: calc(100% - var(--head-h, 0px)); }
@@ -196,8 +221,8 @@ html[lang="ar"] .ncard__text h3 { text-transform: none; font-weight: 500; line-h
 .bento__title .d-title { font-size: clamp(40px, 5.4vw, 92px); }
 .bento__title p { margin-top: 10px; font-size: clamp(15px, 1.2vw, 18px); }
 .bcard { position: relative; border-radius: var(--r-card); overflow: hidden; color: var(--cream); min-height: 160px; }
-.bcard img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 1.1s var(--ease); }
-.bcard:hover img { transform: scale(1.06); }
+.bcard > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 1.1s var(--ease); }
+.bcard:hover > img { transform: scale(1.06); }
 .bcard::after { content: ""; position: absolute; inset: 0; background: linear-gradient(200deg, rgba(20, 16, 10, 0.55), rgba(20, 16, 10, 0) 45%, rgba(20, 16, 10, 0) 60%, rgba(20, 16, 10, 0.55)); }
 .bcard figcaption { position: absolute; z-index: 2; inset-inline: 20px; }
 .bcard figcaption b { display: block; font-family: var(--f-display); font-weight: 400; text-transform: uppercase; font-size: clamp(20px, 2vw, 34px); line-height: 1.05; }
@@ -218,7 +243,7 @@ html[lang="ar"] .bcard figcaption b { text-transform: none; font-weight: 500; li
 .b-side .notch-top::before, .b-side .notch-top::after { content: ""; position: absolute; top: 0; width: 22px; height: 22px; }
 .b-side .notch-top::before { right: 100%; background: radial-gradient(circle at 0 100%, transparent 21.5px, var(--cream) 22px); }
 .b-side .notch-top::after { left: 100%; background: radial-gradient(circle at 100% 100%, transparent 21.5px, var(--cream) 22px); }
-.b-side .notch-top img { width: 46px; }
+.b-side .notch-top img { position: static; width: 40px; height: auto; transform: none !important; margin-top: -2px; }
 .bento .petal { width: 50px; height: 50px; position: absolute; }
 
 /* ---------- S4 products accordion ---------- */
@@ -323,3 +348,4 @@ html[lang="en"] .s-hero__panel .d-title { font-size: clamp(42px, 5.4vw, 96px); }
 .badge__ring { direction: ltr; }
 @media (max-width: 760px) { .s-hero .dot2 { display: none; } }
 .s-hero .badge { filter: drop-shadow(0 1px 6px rgba(20, 16, 10, 0.45)); }
+@media (max-width: 760px) { .bcard figcaption { inset-inline: 12px; } .bcard figcaption b { font-size: 17px; } .bcard figcaption span { display: block; font-size: 12px; line-height: 1.4; margin-top: 2px; } .bcard--bottom figcaption { bottom: 12px; } }
